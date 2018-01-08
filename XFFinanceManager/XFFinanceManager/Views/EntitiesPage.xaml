@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:BaseContentPage  xmlns="http://xamarin.com/schemas/2014/forms"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                        x:Class="XFFinanceManager.Views.EntitiesPage"
+                        xmlns:pages="clr-namespace:XFFinanceManager.Views"
+                        Title="Entities">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid BackgroundColor="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Column="0"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"                             
+                             BackgroundColor="Yellow">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="accountsEditorClicked"/>
+                    </StackLayout.GestureRecognizers>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="2*"/>
+                        </Grid.RowDefinitions>
+                        <Label Text="Accounts"
+                               Grid.Row="0"
+                               HorizontalOptions="Center"/>
+                        <Image Source="icon"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Row="1"
+                               Aspect="AspectFit"
+                               Margin="5,0,0,0"
+                               WidthRequest="32"
+                               HeightRequest="32"/>
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout Grid.Column="1"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             BackgroundColor="Brown"
+                             >
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="categoriesEditorClicked"/>
+                    </StackLayout.GestureRecognizers>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="2*"/>
+                        </Grid.RowDefinitions>
+                        <Label Text="Categories"
+                               Grid.Row="0"
+                               HorizontalOptions="Center"/>
+                        <Image Source="icon"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Row="1"
+                               Aspect="AspectFit"
+                               Margin="5,0,0,0"
+                               WidthRequest="32"
+                               HeightRequest="32"/>
+                    </Grid>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</pages:BaseContentPage>

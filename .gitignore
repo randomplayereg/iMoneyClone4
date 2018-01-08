@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/packages
+/XFFinanceManager/XFFinanceManager/bin
+/XFFinanceManager/XFFinanceManager/obj
+/XFFinanceManager/XFFinanceManager.Android/bin
+/XFFinanceManager/XFFinanceManager.Android/obj
+/XFFinanceManager/XFFinanceManager.Android/XFFinanceManager.Android.csproj.user
+/XFFinanceManager/XFFinanceManager.iOS/obj
+/XFFinanceManager/XFFinanceManager.iOS/bin
+/XFFinanceManager/XFFinanceManager.iOS/XFFinanceManager.iOS.csproj.user
+.vs
